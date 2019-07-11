@@ -1,0 +1,6 @@
+{
+    "titre_album":"Abacab",
+    "groupe": {"nom" : "Genesis", "membres" : ["Peter Gabriel", "Mike Rutherford", "Tony Banks", "Anthony Phillips"]},
+    "annee":1981,
+    "genre":"Rock"
+}

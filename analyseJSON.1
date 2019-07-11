@@ -1,0 +1,25 @@
+.\" Manpage for analyseJSON.
+.\" Contact nathi.hayoun@gmail.com for corrections
+.TH man 1 "10 July 2019" "1.0" "analyseJSON man page"
+.SH NAME
+analyseJSON \- a JSON parser and analyser
+.SH SYNOPSIS
+analyseJSON JSON_FILE object_name
+.SH DESCRIPTION
+analyseJSON allow you to parse a JSON file and throw an error if the file isn't well formatted. You can analyse the content of the file in the command line, and search for a specific content.
+.SH EXAMPLE
+~$ ./analyseJSON abacab.json object
+? object
+{
+	"titre_album" : "Abacab",
+	"groupe" : {"nom" : "Genesis",
+"membres" : ["Peter Gabriel", "Mike Rutherford", "Tony Banks", "Anthony Phillips"]},
+	"annee" : 1981,
+	"genre" : "Rock"
+}
+? object["titre_album"]
+"Abacab"
+? object["groupe"]["nom"]
+"Genesis"
+? object["annee"]
+1981

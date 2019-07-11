@@ -27,3 +27,20 @@ You can analyse the content of the file in the command line, and search for a sp
 ? object["annee"]
 1981
 ```
+
+## Installation
+Compile the Makefile using cmake :
+```
+~/analyseJSON$ cmake .
+```
+Then, use make to compile the executable :
+```
+~/analyseJSON$ make
+```
+Or to produce the deb package :
+```
+~/analyseJSON$ make package
+```
+
+# Credit
+Nathaniel Hayoun
